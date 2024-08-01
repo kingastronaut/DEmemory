@@ -3,7 +3,8 @@
 // https://github.com/vanillaes/csv
 
 
-
+var csvRead = fetch(readme.txt);
+document.getElementById('replace-me').innerText = "Bye...Everyone!"
 
 
 
