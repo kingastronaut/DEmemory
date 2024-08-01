@@ -4,7 +4,7 @@
 
 
 var csvRead = fetch(readme.txt);
-document.getElementById('replace-me').innerText = "Bye...Everyone!"
+document.getElementById('printTest').innerText = csvRead;
 
 
 
