@@ -3,9 +3,10 @@
 // https://github.com/vanillaes/csv
 
 
-var csvRead = fetch(readme.txt);
-document.getElementById('printTest').innerText = csvRead;
-
+let file = "readme.txt"
+fetch (file)
+.then(x => x.text())
+.then(y => document.getElementById("printTest").innerHTML = y);
 
 
 
