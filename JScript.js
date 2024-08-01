@@ -2,14 +2,12 @@
 
 // https://github.com/vanillaes/csv
 
-/*
+
 let file = "catsEasy.csv"
 fetch (file)
-.then(x => x.text())
+//.then(x => x.text())
 .then(y => document.getElementById("printTest").innerHTML = y);
-*/
-let file = "catsEasy.csv"
-document.getElementById("printTest").innerHTML = fetch(file)[1]
+
 
 /*
 //var csv is the CSV file with headers
