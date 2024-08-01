@@ -9,7 +9,7 @@ fetch (file)
 .then(y => document.getElementById("printTest").innerHTML = y);
 */
 let file = "catsEasy.csv"
-document.getElementById("printTest").innerHTML = fetch(file)[1][1]
+document.getElementById("printTest").innerHTML = fetch(file)[1]
 
 /*
 //var csv is the CSV file with headers
