@@ -3,7 +3,7 @@
 // https://github.com/vanillaes/csv
 
 
-let file = "readme.txt"
+let file = "catsEasy.csv"
 fetch (file)
 .then(x => x.text())
 .then(y => document.getElementById("printTest").innerHTML = y);
