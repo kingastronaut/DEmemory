@@ -193,3 +193,6 @@ function inferType (value) {
       return value
   }
 }
+
+
+console.log(catsEasy.csv);
