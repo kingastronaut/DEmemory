@@ -25,7 +25,7 @@ return JSON.stringify(result); //JSON
 })
 // choose random items for 4x4 grid
 .then(z => {
-
+  console.log(z);
   
 });
 
