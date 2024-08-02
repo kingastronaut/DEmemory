@@ -39,18 +39,19 @@ return [result, lines.length];
 
   while (listComplete == false) {
     tempCat = getRandomInt(listLength);
-    console.log(tempCat);
     if (catList.length<4){
       if (!(catList.includes(tempCat))){
         catList.push(tempCat);
-        console.log(catList);
       }
     }
     else {
       listComplete = true;
     }
   };
-  
+
+  for(i in catList){
+    console.log(items[i].item1);
+  }
   
 });
 
