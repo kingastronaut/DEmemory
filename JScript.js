@@ -19,8 +19,7 @@ fetch (file)
       result.push(obj);
 
   }
-console.log(lines.length);
-  
+
 return [result, lines.length];
 //return JSON.stringify(result); //JSON
 
@@ -30,8 +29,7 @@ return [result, lines.length];
   let items = z[0];
   let listLength = z[1];
   
-  console.log(items.item1);
-  console.log(items.tran1);
+  console.log(items);
   console.log(listLength);
 
   
