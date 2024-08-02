@@ -1,8 +1,4 @@
-// Script
-
-// https://github.com/vanillaes/csv
-
-
+// csv file to JSON
 let file = "catsEasy.csv"
 fetch (file)
 .then(x => x.text())
@@ -27,3 +23,5 @@ fetch (file)
   console.log(result);
   return JSON.stringify(result); //JSON
 });
+
+// choose random items for 4x4 grid
