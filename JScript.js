@@ -19,7 +19,9 @@ fetch (file)
       result.push(obj);
 
   }
-return JSON.stringify(result); //JSON
+
+return result;
+//return JSON.stringify(result); //JSON
 
 })
 // choose random items for 4x4 grid
