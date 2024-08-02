@@ -37,7 +37,7 @@ return [result, lines.length];
   var listComplete = false;
   var tempCat = 0;
 
-  while (listComplete = false) {
+  while (listComplete == false) {
     tempCat = getRandomInt(listLength);
     if (catList.length<4){
       if (tempCat in catList === false){
