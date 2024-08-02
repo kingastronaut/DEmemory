@@ -32,7 +32,7 @@ return [result, lines.length];
 // choose random items for 4x4 grid
 .then(z => {
   let items = z[0];
-  let listLength = z[1];
+  let listLength = z[1]-1;
   var catList = [];
   var listComplete = false;
   var tempCat = 0;
