@@ -29,7 +29,7 @@ return [result, lines.length];
   let items = z[0];
   let listLength = z[1];
   
-  console.log(items);
+  console.log(items[0].item1);
   console.log(listLength);
 
   
