@@ -9,6 +9,7 @@ fetch (file)
 .then(x => x.text())
 .then(csv => {
   var lines= csv.split("\n");
+  lines.pop();
   var result = [];
   var headers=lines[0].split(",");
   
@@ -32,8 +33,7 @@ return [result, lines.length];
 // choose random items for 4x4 grid
 .then(z => {
   let items = z[0];
-  items.pop();
-  let listLength = z[1]-2;
+  let listLength = z[1]-1;
   var catList = [];
   var listComplete = false;
   var tempCat = 0;
