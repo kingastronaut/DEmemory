@@ -19,17 +19,20 @@ fetch (file)
       result.push(obj);
 
   }
-
-return result, lines.length;
+console.log(lines.length);
+  
+return [result, lines.length];
 //return JSON.stringify(result); //JSON
 
 })
 // choose random items for 4x4 grid
-.then((z,zLen) => {
+.then(z => {
+  let z[0] = items;
+  let z[1] = listLength;
   
-  console.log(z[0].item1);
-  console.log(z[0].tran1);
-  console.log(zLen);
+  console.log(items.item1);
+  console.log(items.tran1);
+  console.log(listLength);
 
   
 });
