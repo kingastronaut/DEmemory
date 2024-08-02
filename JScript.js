@@ -5,7 +5,7 @@
 
 let file = "catsEasy.csv"
 fetch (file)
-.then(x => x.attr())
+.then(x => x.text())
 .then(y => document.getElementById("printTest").innerHTML = y);
 
 
