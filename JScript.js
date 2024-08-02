@@ -50,8 +50,8 @@ return [result, lines.length];
   };
 console.log(catList);
   for(i in catList){
-    console.log(i);
-    console.log(items[i].item1);
+    console.log(catList[i]);
+    console.log(items[catList[i]].item1);
   }
   
 });
