@@ -51,7 +51,7 @@ return [result, lines.length];
 console.log(catList);
   for(i in catList){
     console.log(catList[i]);
-    console.log(items[catList[i]].item1);
+    console.log(items[catList[i]-1].item1);
   }
   
 });
