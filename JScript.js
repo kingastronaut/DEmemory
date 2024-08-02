@@ -20,8 +20,9 @@ fetch (file)
       result.push(obj);
 
   }
-  console.log(result);
-  return JSON.stringify(result); //JSON
+  var csvAll = JSON.stringify(result); //JSON
 });
+
+console.log(csvAll);
 
 // choose random items for 4x4 grid
