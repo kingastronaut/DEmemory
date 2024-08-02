@@ -1,3 +1,8 @@
+// random integrer in range
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
 // csv file to JSON
 let file = "catsEasy.csv"
 fetch (file)
@@ -28,9 +33,23 @@ return [result, lines.length];
 .then(z => {
   let items = z[0];
   let listLength = z[1];
+  var catList = [];
+  var listComplete = false;
+  var tempCat = 0;
+
+  while (listComplete = false) {
+    tempCat = getRandomInt(listLength);
+    if (catList.length<4){
+      if (tempCat in catList === false){
+        catList.push(tempCat)
+      }
+    }
+    else {
+      listComplete = true;
+    }
+  };
   
-  console.log(items[0].item1);
-  console.log(listLength);
+console.log(catList);
 
   
 });
