@@ -29,6 +29,7 @@ return result;
   
   console.log(z[0].item1);
   console.log(z[0].tran1);
+  console.log(length.z);
 
   
 });
