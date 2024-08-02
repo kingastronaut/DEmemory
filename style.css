@@ -8,8 +8,8 @@ div.container {
 .boxes {
 	display: inline-block;
 	text-align: center;
-	width: 15vw;
-	padding: 4vw;
+	width: 10vw;
+	padding: 1vw;
 	margin: 2vw;
   	background-color: #90EE90;
 
@@ -17,5 +17,5 @@ div.container {
 }
 
 .lines {
-	display: block;
+	
 }
