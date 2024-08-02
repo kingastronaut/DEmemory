@@ -56,8 +56,6 @@ var chosenCats = [];
   for(i in catList){
     chosenCats.push(items[catList[i]]);
   }
-  console.log(chosenCats);
-
 // create a 4x4 matrix with unique [x,itemN,tranN,category] values where x is a random 'b'+N where N is between 1 and 16
   var matrix16 = [['b1'],['b2'],['b3'],['b4'],['b5'],['b6'],['b7'],['b8'],['b9'],['b10'],['b11'],['b12'],['b13'],['b14'],['b15'],['b16']];
   var matrixCats = [[chosenCats[0].item1,chosenCats[0].tran1,chosenCats[0].category],[chosenCats[0].item2,chosenCats[0].tran2,chosenCats[0].category],[chosenCats[0].item3,chosenCats[0].tran3,chosenCats[0].category],[chosenCats[0].item4,chosenCats[0].tran4,chosenCats[0].category],
@@ -81,8 +79,6 @@ function shuffle(array) {
     matrix16[i] = matrix16[i].concat(matrixCats[i]);
     document.getElementById(matrix16[i][0]).innerHTML = matrix16[i][1];
   }
-
-console.log(matrix16);
     
   
 });
