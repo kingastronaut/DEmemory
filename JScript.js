@@ -28,7 +28,7 @@ return JSON.stringify(result); //JSON
   console.log(z);
     console.log("2");
 
-  console.log(typeOf(z));
+  console.log(z[0]);
   
 });
 
