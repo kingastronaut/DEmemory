@@ -26,11 +26,7 @@ return result;
 })
 // choose random items for 4x4 grid
 .then(z => {
-    console.log("1");
-  console.log(z);
-    console.log("2");
-
-  console.log(z[0]);
+  console.log(z[0].item1);
   
 });
 
