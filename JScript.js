@@ -54,7 +54,7 @@ console.log(listLength);
 // list of objects in final game
 var chosenCats = [];
   for(i in catList){
-    chosenCats.push(items[i]);
+    chosenCats.push(items[catList[i]]);
   }
   console.log(chosenCats);
 
