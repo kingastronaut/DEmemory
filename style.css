@@ -18,6 +18,8 @@ div.container {
 	font-family: Arial;
 	border-radius: 5px;
 	border: 0px;
+	height:5vw;
+	vertical-align: middle;
 
 	
 }
