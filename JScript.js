@@ -20,10 +20,13 @@ fetch (file)
       result.push(obj);
 
   }
-  var csvAll = JSON.stringify(result); //JSON
-  console.log(csvAll);
-});
+return JSON.stringify(result); //JSON
 
-console.log(csvAll);
+})
+// choose random items for 4x4 grid
+.then(z => {
+
+  
+});
 
 // choose random items for 4x4 grid
