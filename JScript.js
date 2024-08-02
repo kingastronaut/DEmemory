@@ -6,7 +6,11 @@
 let file = "catsEasy.csv"
 fetch (file)
 .then(x => x.text())
-.then(y => document.getElementById("printTest").innerHTML = y);
+.then(y => 
+  var lines= y.split("' '");
+  var result = [];
+  var headers=lines[0].split(",");
+     );
 
 
 /*
