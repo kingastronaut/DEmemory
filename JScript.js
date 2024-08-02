@@ -27,8 +27,8 @@ return [result, lines.length];
 })
 // choose random items for 4x4 grid
 .then(z => {
-  let z[0] = items;
-  let z[1] = listLength;
+  let items = z[0];
+  let listLength = z[1];
   
   console.log(items.item1);
   console.log(items.tran1);
