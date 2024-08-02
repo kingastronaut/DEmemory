@@ -41,7 +41,7 @@ return [result, lines.length];
     tempCat = getRandomInt(listLength);
     console.log(tempCat);
     if (catList.length<4){
-      if (!(tempCat in catList)){
+      if (!(catList.includes(tempCat))){
         catList.push(tempCat);
         console.log(catList);
       }
