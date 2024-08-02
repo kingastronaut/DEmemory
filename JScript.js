@@ -8,7 +8,7 @@ fetch (file)
 .then(x => x.text())
 .then(y => {
   var csv = y.replace("'",""); 
-  var lines= csv.split("/n");
+  var lines= csv.split("\n");
   var result = [];
   var headers=lines[0].split(",");
   console.log(lines);
