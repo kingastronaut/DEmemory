@@ -50,12 +50,14 @@ console.log(listLength);
       listComplete = true;
     }
   };
-console.log(items);
-console.log(catList);
-  for(i in catList){
-    console.log(items[catList[i]].item1);
-  }
   
+// list of objects in final game
+var chosenCats = [];
+  for(i in catList){
+    chosenCats.push(items[i]);
+  }
+  console.log(chosenCats);
+
 });
 
 // choose random items for 4x4 grid
