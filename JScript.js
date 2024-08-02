@@ -36,7 +36,7 @@ return [result, lines.length];
   var catList = [];
   var listComplete = false;
   var tempCat = 0;
-
+console.log(listLength);
   while (listComplete == false) {
     tempCat = getRandomInt(listLength);
     if (catList.length<4){
@@ -50,7 +50,7 @@ return [result, lines.length];
   };
 console.log(catList);
   for(i in catList){
-    console.log(items[catList[i]-1].item1);
+    console.log(items[catList[i]].item1);
   }
   
 });
