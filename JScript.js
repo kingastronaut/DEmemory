@@ -43,6 +43,7 @@ return [result, lines.length];
       if (!(tempCat in catList)){
         console.log(tempCat);
         catList.push(tempCat);
+        console.log(catList);
       }
     }
     else {
@@ -50,8 +51,6 @@ return [result, lines.length];
     }
   };
   
-console.log(catList);
-
   
 });
 
