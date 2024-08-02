@@ -7,22 +7,19 @@ div.container {
 }
 
 .boxes {
+	
 	display: inline-block;
-	text-align: center;
-	width: 10vw;
-	padding: 2vw;
-	margin: 0.5vw;
   	background-color: #90EE90;
-	font-size: 80%;
+	font-size: 2vw;
 	font-weight: bold;
 	font-family: Arial;
 	border-radius: 5px;
-	border: 0px;
-	height:5vw;
-	vertical-align: middle;
-
-	
+	width: 20vw;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	margin: 0.3vw;
 }
+
 
 .lines {
 	
