@@ -79,7 +79,7 @@ function shuffle(array) {
 
   for (i in matrix16) {
     matrix16[i] = matrix16[i].concat(matrixCats[i]);
-    document.getElementById(matrix[i][0]).innerHTML = matrix[i][1];
+    document.getElementById(matrix16[i][0]).innerHTML = matrix16[i][1];
   }
 
 console.log(matrix16);
