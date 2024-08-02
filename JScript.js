@@ -60,7 +60,11 @@ var chosenCats = [];
 
 // create a random 4x4 matrix with unique [itemN,tranN,category] values
   var matrix16 = [['b1'],['b2'],['b3'],['b4'],['b5'],['b6'],['b7'],['b8'],['b9'],['b10'],['b11'],['b12'],['b13'],['b14'],['b15'],['b16']];
-
+  var matrixCats = [[chosenCats[0].item1,chosenCats[0].itemtran1,chosenCats[0].category],[chosenCats[0].item2,chosenCats[0].itemtran2,chosenCats[0].category],[chosenCats[0].item3,chosenCats[0].itemtran3,chosenCats[0].category],[chosenCats[0].item4,chosenCats[0].itemtran4,chosenCats[0].category],
+                   [chosenCats[1].item1,chosenCats[1].itemtran1,chosenCats[1].category],[chosenCats[1].item2,chosenCats[1].itemtran2,chosenCats[1].category],[chosenCats[1].item3,chosenCats[1].itemtran3,chosenCats[1].category],[chosenCats[1].item4,chosenCats[1].itemtran4,chosenCats[1].category],
+                   [chosenCats[2].item1,chosenCats[2].itemtran1,chosenCats[2].category],[chosenCats[2].item2,chosenCats[2].itemtran2,chosenCats[2].category],[chosenCats[2].item3,chosenCats[2].itemtran3,chosenCats[2].category],[chosenCats[2].item4,chosenCats[2].itemtran4,chosenCats[2].category],
+                   [chosenCats[3].item1,chosenCats[3].itemtran1,chosenCats[3].category],[chosenCats[3].item2,chosenCats[3].itemtran2,chosenCats[3].category],[chosenCats[3].item3,chosenCats[3].itemtran3,chosenCats[3].category],[chosenCats[3].item4,chosenCats[3].itemtran4,chosenCats[3].category]]
+  
 function shuffle(array) {
   let currentIndex = array.length;
   while (currentIndex != 0) {
@@ -71,8 +75,12 @@ function shuffle(array) {
   }
 };
 
-  shuffle(matrix16);
-  console.log(matrix16);
+  shuffle(matrixCats);
+  console.log(matrixCats);
+
+
+    
+  }
   
 });
 
