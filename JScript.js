@@ -48,6 +48,7 @@ console.log(listLength);
       listComplete = true;
     }
   };
+  
 console.log(catList);
   for(i in catList){
     console.log(items[catList[i]].item1);
