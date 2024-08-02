@@ -58,6 +58,9 @@ var chosenCats = [];
   }
   console.log(chosenCats);
 
+// create a random 4x4 matrix with unique [itemN,tranN,category] values
+  
+  
 });
 
 // choose random items for 4x4 grid
