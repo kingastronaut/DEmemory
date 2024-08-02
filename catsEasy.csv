@@ -1,3 +1,4 @@
+'item1','item2','item3','item4','tran1','tran2','tran3','tran4','category','partOfSpeech'
 'der Bär','der Hund','die Katze','das Pferd','bear','dog','cat','horse','Animals','N'
 'der Strand','die Post','das Krankenhaus','der Bahnhof','beach','post office','hospital','railway station','Places','N'
 'der Fluß', 'der See', 'die See', 'der Ozean', 'river', 'lake', 'sea', 'ocean', 'Bodies of water', 'N'
