@@ -2,8 +2,7 @@
 let file = "catsEasy.csv"
 fetch (file)
 .then(x => x.text())
-.then(y => {
-  var csv = y.replace("'",""); 
+.then(csv => {
   var lines= csv.split("\n");
   var result = [];
   var headers=lines[0].split(",");
