@@ -24,10 +24,14 @@ return JSON.stringify(result); //JSON
 })
 // choose random items for 4x4 grid
 .then(z => {
-  console.log("1: " + z[1]);
-  console.log("2: " + z[1].item1);
-  console.log("3: " + z.item1);
-  console.log("4: " + z);
+    console.log("1");
+  console.log(z);
+    console.log("2");
+  console.log(z(1));
+    console.log("3");
+  console.log(z(1).item1);
+    console.log("4");
+  console.log(typeOf(z));
   
 });
 
