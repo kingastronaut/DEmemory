@@ -58,7 +58,7 @@ var chosenCats = [];
   }
   console.log(chosenCats);
 
-// create a random 4x4 matrix with unique [itemN,tranN,category] values
+// create a 4x4 matrix with unique [x,itemN,tranN,category] values where x is a random 'b'+N where N is between 1 and 16
   var matrix16 = [['b1'],['b2'],['b3'],['b4'],['b5'],['b6'],['b7'],['b8'],['b9'],['b10'],['b11'],['b12'],['b13'],['b14'],['b15'],['b16']];
   var matrixCats = [[chosenCats[0].item1,chosenCats[0].tran1,chosenCats[0].category],[chosenCats[0].item2,chosenCats[0].tran2,chosenCats[0].category],[chosenCats[0].item3,chosenCats[0].tran3,chosenCats[0].category],[chosenCats[0].item4,chosenCats[0].tran4,chosenCats[0].category],
                    [chosenCats[1].item1,chosenCats[1].tran1,chosenCats[1].category],[chosenCats[1].item2,chosenCats[1].tran2,chosenCats[1].category],[chosenCats[1].item3,chosenCats[1].tran3,chosenCats[1].category],[chosenCats[1].item4,chosenCats[1].tran4,chosenCats[1].category],
