@@ -78,7 +78,7 @@ function shuffle(array) {
   shuffle(matrixCats);
 
   for (i in matrix16) {
-    matrix16[i].push(matrixCats[i]);
+    matrix16[i].concat(matrixCats[i]);
   }
 
 console.log(matrix16);
