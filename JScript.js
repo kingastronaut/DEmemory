@@ -40,7 +40,7 @@ return [result, lines.length];
   while (listComplete == false) {
     tempCat = getRandomInt(listLength);
     if (catList.length<4){
-      if (tempCat in catList === false){
+      if (tempCat in catList == false){
         catList.push(tempCat)
       }
     }
