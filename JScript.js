@@ -38,7 +38,6 @@ return [result, lines.length];
   var catList = [];
   var listComplete = false;
   var tempCat = 0;
-console.log(listLength);
   while (listComplete == false) {
     tempCat = getRandomInt(listLength);
     if (catList.length<4){
