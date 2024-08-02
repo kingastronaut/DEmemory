@@ -28,7 +28,7 @@ return result;
 .then(z => {
   
   console.log(z[0].item1);
-  console.log(z[0].trans1);
+  console.log(z[0].tran1);
 
   
 });
