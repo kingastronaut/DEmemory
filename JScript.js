@@ -76,9 +76,12 @@ function shuffle(array) {
 };
 
   shuffle(matrixCats);
-  console.log(matrixCats);
 
+  for (i in matrix16) {
+    matrix16[i].push(matrixCats[i]);
+  }
 
+console.log(matrix16);
     
   
 });
