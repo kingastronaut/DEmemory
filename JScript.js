@@ -39,9 +39,9 @@ return [result, lines.length];
 
   while (listComplete == false) {
     tempCat = getRandomInt(listLength);
+    console.log(tempCat);
     if (catList.length<4){
       if (!(tempCat in catList)){
-        console.log(tempCat);
         catList.push(tempCat);
         console.log(catList);
       }
