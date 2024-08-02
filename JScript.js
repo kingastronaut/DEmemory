@@ -9,6 +9,7 @@ fetch (file)
 .then(x => x.text())
 .then(csv => {
   var lines= csv.split("\n");
+  // above tends to leave one empty line, remove that
   lines.pop();
   var result = [];
   var headers=lines[0].split(",");
