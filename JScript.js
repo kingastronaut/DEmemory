@@ -75,6 +75,7 @@ function shuffle(array) {
 
   shuffle(matrixCats);
 
+  //creates final matrix and fills squares on page
   for (i in matrix16) {
     matrix16[i] = matrix16[i].concat(matrixCats[i]);
     document.getElementById(matrix16[i][0]).innerHTML = matrix16[i][1];
