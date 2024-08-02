@@ -60,6 +60,19 @@ var chosenCats = [];
 
 // create a random 4x4 matrix with unique [itemN,tranN,category] values
   var matrix16 = [['b1'],['b2'],['b3'],['b4'],['b5'],['b6'],['b7'],['b8'],['b9'],['b10'],['b11'],['b12'],['b13'],['b14'],['b15'],['b16']];
+
+function shuffle(array) {
+  let currentIndex = array.length;
+  while (currentIndex != 0) {
+    let randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+};
+
+  shuffle(matrix16);
+  console.log(matrix16);
   
 });
 
