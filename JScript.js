@@ -27,10 +27,7 @@ return JSON.stringify(result); //JSON
     console.log("1");
   console.log(z);
     console.log("2");
-  console.log(z(1));
-    console.log("3");
-  console.log(z(1).item1);
-    console.log("4");
+
   console.log(typeOf(z));
   
 });
