@@ -21,6 +21,7 @@ fetch (file)
 
   }
   var csvAll = JSON.stringify(result); //JSON
+  console.log(csvAll);
 });
 
 console.log(csvAll);
