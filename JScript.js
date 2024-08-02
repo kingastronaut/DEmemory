@@ -48,8 +48,9 @@ return [result, lines.length];
       listComplete = true;
     }
   };
-
+console.log(catList);
   for(i in catList){
+    console.log(i);
     console.log(items[i].item1);
   }
   
