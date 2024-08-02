@@ -33,7 +33,7 @@ return [result, lines.length];
 .then(z => {
   let items = z[0];
   items.pop();
-  let listLength = z[1]-1;
+  let listLength = z[1]-2;
   var catList = [];
   var listComplete = false;
   var tempCat = 0;
