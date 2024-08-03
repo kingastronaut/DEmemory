@@ -85,7 +85,7 @@ function shuffle(array) {
 
 // buttons
 
-clickBox() {
+function clickBox() {
   console.log(matrix16);
   
 }
