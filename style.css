@@ -24,3 +24,7 @@ div.container {
 .lines {
 	
 }
+
+#cards{
+	visibility: hidden;
+}
