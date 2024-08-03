@@ -87,7 +87,7 @@ function shuffle(array) {
 
 //recreate matrix16 outside of promise and 
 function startButton() {
-document.getElementById(startButton).style.visibility = "visible"
+document.getElementById("startButton").style.visibility = "visible"
 var mat16 = [['b1'],['b2'],['b3'],['b4'],['b5'],['b6'],['b7'],['b8'],['b9'],['b10'],['b11'],['b12'],['b13'],['b14'],['b15'],['b16']];
 for (i in mat16) {
     let btnInfo = [document.getElementById(mat16[i][0]).innerHTML.split(',')]
