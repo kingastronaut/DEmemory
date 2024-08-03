@@ -87,6 +87,7 @@ function shuffle(array) {
 
 //recreate matrix16 outside of promise when start is clicked
 var mat16 = [['b1'],['b2'],['b3'],['b4'],['b5'],['b6'],['b7'],['b8'],['b9'],['b10'],['b11'],['b12'],['b13'],['b14'],['b15'],['b16']];
+var chosenBtns = [];
 
 function startButton() {
 document.getElementById("cards").style.visibility = "visible"
