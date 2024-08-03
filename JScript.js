@@ -83,7 +83,6 @@ function shuffle(array) {
     matrix16[i] = matrix16[i].concat(matrixCats[i]);
     document.getElementById(matrix16[i][0]).innerHTML = matrix16[i][1]+'.'+matrix16[i][2]+'.'+matrix16[i][3];
   }
-}
 });
 
 //recreate matrix16 outside of promise and 
@@ -98,4 +97,5 @@ for (i in mat16) {
 // buttons
 
 function clickBox() {
-  console.log(matrix16);
+  console.log(mat16);
+}
