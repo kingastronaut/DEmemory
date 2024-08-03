@@ -92,7 +92,7 @@ for (i in mat16) {
     let btnInfo = [mat16[i][1], mat16[i][2], mat16[i][3]]
     mat16[i] = mat16[i].concat(btnInfo);
     document.getElementById(mat16[i][0]).innerHTML = mat16[i][1]
-
+}
 
 // buttons
 
