@@ -81,7 +81,7 @@ function shuffle(array) {
   //creates final matrix and fills squares on page
   for (i in matrix16) {
     matrix16[i] = matrix16[i].concat(matrixCats[i]);
-    document.getElementById(matrix16[i][0]).innerHTML = matrix16[i][1]+'.'+matrix16[i][2]+'.'+matrix16[i][3];
+    document.getElementById(matrix16[i][0]).innerHTML = matrix16[i][1]+','+matrix16[i][2]+','+matrix16[i][3];
   }
 });
 
@@ -89,7 +89,7 @@ function shuffle(array) {
 
 var mat16 = [['b1'],['b2'],['b3'],['b4'],['b5'],['b6'],['b7'],['b8'],['b9'],['b10'],['b11'],['b12'],['b13'],['b14'],['b15'],['b16']];
 for (i in mat16) {
-    let btnInfo = [mat16[i][1], mat16[i][2], mat16[i][3]]
+    let btnInfo = [document.getElementById(mat16[i][0]).innerHTML.split(',')]
     mat16[i] = mat16[i].concat(btnInfo);
     document.getElementById(mat16[i][0]).innerHTML = mat16[i][1]
 }
