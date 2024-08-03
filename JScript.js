@@ -83,4 +83,9 @@ function shuffle(array) {
   
 });
 
-// choose random items for 4x4 grid
+// buttons
+
+clickBox() {
+  console.log(matrix16);
+  
+}
