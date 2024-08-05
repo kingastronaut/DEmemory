@@ -118,5 +118,11 @@ function clickBox(btnNum) {
         } else {
         console.log("choose max 4!");
       }
-    } 
+    }
+
+  function checkAns() {
+    if (chosenBtns.length == 4) {
+      
+    }
+  }
 };
