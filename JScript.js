@@ -9,7 +9,7 @@ function emptyConsoleP(){
 
 //show message x for y ms below grid
 
-var TimeOut = '';
+var timeOut = '';
 
 function flashMessage(x, y) {
   clearTimeout(timeOut);
