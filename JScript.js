@@ -105,7 +105,7 @@ function clickBox(btnNum) {
 
   if (onClickID in chosenBtns){ 
     document.getElementById(onClickID).style.background = "#90EE90";
-    chosenBtns.splice(chosenBtns.indexOf(onClickID), 1)
+    chosenBtns.splice(chosenBtns.indexOf(onClickID), 1);
     console.log(chosenBtns);
   }
   else {
