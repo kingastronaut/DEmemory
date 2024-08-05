@@ -100,8 +100,9 @@ for (i in mat16) {
 
 // buttons
 
-function clickBox(a) {
-  let onCLickID = 'b'+ a;
+function clickBox(btnNum) {
+  var onClickID = 'b'+ btnNum;
+  console.log(onClickID);
 
   if (onClickID in chosenBtns){ 
     document.getElementById(onClickID).style.background = "#90EE90";
