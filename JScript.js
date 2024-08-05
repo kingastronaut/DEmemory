@@ -100,6 +100,7 @@ for (i in mat16) {
 
 // buttons
 
-function clickBox() {
-  console.log(mat16);
+function clickBox(a) {
+  onCLickID = 'b'+ a.string();
+  document.getElementById(onClickID).style.background = "#D1D1D9";
 }
