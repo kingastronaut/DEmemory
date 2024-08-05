@@ -128,8 +128,12 @@ function clickBox(btnNum) {
           chosenCats.push(mat16[i][3]);
         }
       }
-      
-      console.log(chosenCats)
+
+      console.log(chosenCats[0])
+      console.log(chosenCats[1])
+      console.log(chosenCats[2])
+      console.log(chosenCats[3])
+      console.log(chosenCats[0] == chosenCats[1] == chosenCats[2] == chosenCats[3])
 
       
       if (chosenCats[0] == chosenCats[1] == chosenCats[2] == chosenCats[3]){
