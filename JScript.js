@@ -104,9 +104,6 @@ function clickBox(btnNum) {
   var onClickID = 'b'+ btnNum;
 
     if (chosenBtns.includes(onClickID)){ 
-
-      
-      
       document.getElementById(onClickID).style.background = "#90EE90";
       chosenBtns.splice(chosenBtns.indexOf(onClickID), 1);
       
@@ -119,7 +116,8 @@ function clickBox(btnNum) {
         console.log("choose max 4!");
       }
     }
-
+}
+  
   function checkAns() {
     let chosenCats = [];
     if (chosenBtns.length != 4) {
