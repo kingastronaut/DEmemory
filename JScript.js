@@ -121,8 +121,23 @@ function clickBox(btnNum) {
     }
 
   function checkAns() {
-    if (chosenBtns.length == 4) {
-      
-    }
+    let chosenCats = [];
+    if (chosenBtns.length != 4) {
+      console.log("You must choose 4 tiles!")
+    } else {
+      for (i in mat16){
+        if (mat16[i][0] == chosenBtns[0] || mat16[i][0] == chosenBtns[1] || mat16[i][0] == chosenBtns[2] || mat16[i][0] == chosenBtns[3]) {
+          chosenCats.push(mat16[i][3]);
+        }
+      }
+      if (chosenCats[0] == chosenCats[1] == chosenCats[2] == chosenCats[3]){
+        //correct combo
+        console.log("Correct!");
+        
+      } else {
+        //wrong combo
+        console.log("Try again");
+      }
+        
   }
 };
