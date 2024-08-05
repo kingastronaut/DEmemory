@@ -102,6 +102,7 @@ setStart();
 //recreate matrix16 outside of promise when start is clicked
 var mat16 = [['b1'],['b2'],['b3'],['b4'],['b5'],['b6'],['b7'],['b8'],['b9'],['b10'],['b11'],['b12'],['b13'],['b14'],['b15'],['b16']];
 var chosenBtns = [];
+var corrects = 0;
 
 function startButton() {
 document.getElementById("cards").style.visibility = "visible"
@@ -146,7 +147,7 @@ function clickBox(btnNum) {
       
       if (chosenCats[0] == chosenCats[1] && chosenCats[2] == chosenCats[3] && chosenCats[1] == chosenCats[2]){
         //correct combo
-        flashMessage("Correct!", 2000)
+        corrects++;
         document.getElementById(chosenBtns[0]).onclick = null;
         document.getElementById(chosenBtns[1]).onclick = null;
         document.getElementById(chosenBtns[2]).onclick = null;
@@ -158,6 +159,12 @@ function clickBox(btnNum) {
         document.getElementById(chosenBtns[3]).style.background = "transparent";
 
         chosenBtns = []
+
+        if (corrects == 4){
+          flashMessage("Perfect, you got everything!", 2000)
+        } else {
+          flashMessage("Correct!", 2000)
+        }
         
       } else {
         //wrong combo
