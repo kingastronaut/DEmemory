@@ -105,18 +105,18 @@ function clickBox(btnNum) {
 
     if (chosenBtns.includes(onClickID)){ 
 
-      if (chosenBtns.length < 4) {
+      
       
       document.getElementById(onClickID).style.background = "#90EE90";
       chosenBtns.splice(chosenBtns.indexOf(onClickID), 1);
-      console.log(chosenBtns);
-      } else {
-        console.log("choose max 4!");
-      }
+      
     }
     else {
+      if (chosenBtns.length < 4) {
       document.getElementById(onClickID).style.background = "#D1D1D9";
       chosenBtns.push(onClickID)
-      console.log(chosenBtns);
+        } else {
+        console.log("choose max 4!");
+      }
     } 
 };
