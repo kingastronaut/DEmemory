@@ -10,7 +10,6 @@ function emptyConsoleP(){
 function flashMessage(x, y) {
   document.getElementById('consoleP').innerHTML = x;
   setTimeout(emptyConsoleP, y);
-  setTimeout(console.log("aaa"), y);
 }
 
 flashMessage("Welcome!", 3000)
