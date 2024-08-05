@@ -102,5 +102,13 @@ for (i in mat16) {
 
 function clickBox(a) {
   onCLickID = 'b'+ a.string();
+
+  if !(onClickID in chosenBtns){ 
   document.getElementById(onClickID).style.background = "#D1D1D9";
+  chosenBtns.push(onClickID)
+  }
+  else {
+    document.getElementById(onClickID).style.background = "#D1D1D9";
+
+  }
 }
