@@ -136,7 +136,7 @@ function clickBox(btnNum) {
       console.log(chosenCats[0] == chosenCats[1] == chosenCats[2] == chosenCats[3])
 
       
-      if (chosenCats[0] == chosenCats[1] == chosenCats[2] == chosenCats[3]){
+      if (chosenCats[0] == chosenCats[1] && chosenCats[2] == chosenCats[3] && chosenCats[1] == chosenCats[2]){
         //correct combo
         console.log("Correct!");
         
