@@ -3,6 +3,13 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
+function flashMessage(x, y) {
+  document.getElementById('consoleP').InnerHTML = x;
+  setTimeout((document.getElementById('consoleP').InnerHTML = ''), y);
+}
+
+flashMessage("Welcome!", 3000)
+
 //filename
 
 var filename = "catsEasy.csv"
