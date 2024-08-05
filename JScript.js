@@ -102,18 +102,21 @@ for (i in mat16) {
 
 function clickBox(btnNum) {
   var onClickID = 'b'+ btnNum;
-if (chosenBtns.length < 4) {
-      if (chosenBtns.includes(onClickID)){ 
-        document.getElementById(onClickID).style.background = "#90EE90";
-        chosenBtns.splice(chosenBtns.indexOf(onClickID), 1);
-        console.log(chosenBtns);
+
+    if (chosenBtns.includes(onClickID)){ 
+
+      if (chosenBtns.length < 4) {
+      
+      document.getElementById(onClickID).style.background = "#90EE90";
+      chosenBtns.splice(chosenBtns.indexOf(onClickID), 1);
+      console.log(chosenBtns);
+      } else {
+        console.log("choose max 4!");
       }
-      else {
-        document.getElementById(onClickID).style.background = "#D1D1D9";
-        chosenBtns.push(onClickID)
-        console.log(chosenBtns);
-      }
-} {
-  console.log("You can only choose 4 items!")
-}
+    }
+    else {
+      document.getElementById(onClickID).style.background = "#D1D1D9";
+      chosenBtns.push(onClickID)
+      console.log(chosenBtns);
+    } 
 };
