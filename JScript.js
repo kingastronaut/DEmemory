@@ -4,8 +4,8 @@ function getRandomInt(max) {
 }
 
 function flashMessage(x, y) {
-  document.getElementById('consoleP').InnerHTML = x;
-  setTimeout((document.getElementById('consoleP').InnerHTML = ''), y);
+  document.getElementById('consoleP').innerHTML = x;
+  setTimeout((document.getElementById('consoleP').innerHTML = ''), y);
 }
 
 flashMessage("Welcome!", 3000)
