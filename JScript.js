@@ -108,7 +108,7 @@ function clickBox(a) {
   chosenBtns.push(onClickID)
   }
   else {
-    document.getElementById(onClickID).style.background = "#D1D1D9";
-
+    document.getElementById(onClickID).style.background = "#90EE90";
+    chosenBtns.splice(chosenBtns.indexOf(onClickID), 1)
   }
 }
