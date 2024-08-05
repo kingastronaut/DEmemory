@@ -132,7 +132,7 @@ function clickBox(btnNum) {
   function checkAns() {
     let chosenCats = [];
     if (chosenBtns.length != 4) {
-        flashMessage("You must choose 4 words!", 250)
+        flashMessage("You must choose 4 words!", 2000)
     } else {
       for (i in mat16){
         if (mat16[i][0] == chosenBtns[0] || mat16[i][0] == chosenBtns[1] || mat16[i][0] == chosenBtns[2] || mat16[i][0] == chosenBtns[3]) {
@@ -143,7 +143,7 @@ function clickBox(btnNum) {
       
       if (chosenCats[0] == chosenCats[1] && chosenCats[2] == chosenCats[3] && chosenCats[1] == chosenCats[2]){
         //correct combo
-        flashMessage("Correct!", 250)
+        flashMessage("Correct!", 2000)
         document.getElementById(chosenBtns[0]).onclick = null;
         document.getElementById(chosenBtns[1]).onclick = null;
         document.getElementById(chosenBtns[2]).onclick = null;
@@ -158,7 +158,7 @@ function clickBox(btnNum) {
         
       } else {
         //wrong combo
-        flashMessage("Try again!", 250)
+        flashMessage("Try again!", 2000)
       }
         
   }
