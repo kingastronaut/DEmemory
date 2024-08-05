@@ -103,12 +103,12 @@ for (i in mat16) {
 function clickBox(a) {
   onCLickID = 'b'+ a.string();
 
-  if !(onClickID in chosenBtns){ 
-  document.getElementById(onClickID).style.background = "#D1D1D9";
-  chosenBtns.push(onClickID)
-  }
-  else {
+  if (onClickID in chosenBtns){ 
     document.getElementById(onClickID).style.background = "#90EE90";
     chosenBtns.splice(chosenBtns.indexOf(onClickID), 1)
+  }
+  else {
+    document.getElementById(onClickID).style.background = "#D1D1D9";
+    chosenBtns.push(onClickID)    
   }
 }
