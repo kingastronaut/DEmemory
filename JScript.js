@@ -3,9 +3,13 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
+function emptyConsoleP(){
+  document.getElementById('consoleP').innerHTML = '';
+}
+
 function flashMessage(x, y) {
   document.getElementById('consoleP').innerHTML = x;
-  setTimeout((document.getElementById('consoleP').innerHTML = ''), y);
+  setTimeout(emptyConsoleP(), y);
 }
 
 flashMessage("Welcome!", 3000)
