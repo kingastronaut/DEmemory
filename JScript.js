@@ -129,16 +129,21 @@ function clickBox(btnNum) {
         }
       }
 
-      console.log(chosenCats[0])
-      console.log(chosenCats[1])
-      console.log(chosenCats[2])
-      console.log(chosenCats[3])
-      console.log(chosenCats[0] == chosenCats[1] == chosenCats[2] == chosenCats[3])
-
       
       if (chosenCats[0] == chosenCats[1] && chosenCats[2] == chosenCats[3] && chosenCats[1] == chosenCats[2]){
         //correct combo
         console.log("Correct!");
+        document.getElementById(chosenBtns[0]).onclick = null;
+        document.getElementById(chosenBtns[1]).onclick = null;
+        document.getElementById(chosenBtns[2]).onclick = null;
+        document.getElementById(chosenBtns[3]).onclick = null;
+        
+        document.getElementById(chosenBtns[0]).style.background = "transparent";
+        document.getElementById(chosenBtns[1]).style.background = "transparent";
+        document.getElementById(chosenBtns[2]).style.background = "transparent";
+        document.getElementById(chosenBtns[3]).style.background = "transparent";
+
+        chosenBtns = []
         
       } else {
         //wrong combo
