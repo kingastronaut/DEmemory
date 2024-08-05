@@ -103,7 +103,7 @@ for (i in mat16) {
 function clickBox(btnNum) {
   var onClickID = 'b'+ btnNum;
 
-  if (onClickID in chosenBtns){ 
+  if (chosenBtns.includes(onClickID)){ 
     document.getElementById(onClickID).style.background = "#90EE90";
     chosenBtns.splice(chosenBtns.indexOf(onClickID), 1);
     console.log(chosenBtns);
