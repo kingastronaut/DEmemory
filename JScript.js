@@ -128,6 +128,10 @@ function clickBox(btnNum) {
           chosenCats.push(mat16[i][3]);
         }
       }
+      
+      console.log(chosenCats)
+
+      
       if (chosenCats[0] == chosenCats[1] == chosenCats[2] == chosenCats[3]){
         //correct combo
         console.log("Correct!");
