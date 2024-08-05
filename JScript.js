@@ -7,12 +7,12 @@ function emptyConsoleP(){
   document.getElementById('consoleP').innerHTML = '';
 }
 
+//show message x for y ms below grid
 function flashMessage(x, y) {
   document.getElementById('consoleP').innerHTML = x;
   setTimeout(emptyConsoleP, y);
 }
 
-flashMessage("Welcome!", 3000)
 
 //filename
 
@@ -132,7 +132,7 @@ function clickBox(btnNum) {
   function checkAns() {
     let chosenCats = [];
     if (chosenBtns.length != 4) {
-      console.log("You must choose 4 tiles!")
+        flashMessage("You must choose 4 words!", 250)
     } else {
       for (i in mat16){
         if (mat16[i][0] == chosenBtns[0] || mat16[i][0] == chosenBtns[1] || mat16[i][0] == chosenBtns[2] || mat16[i][0] == chosenBtns[3]) {
@@ -143,7 +143,7 @@ function clickBox(btnNum) {
       
       if (chosenCats[0] == chosenCats[1] && chosenCats[2] == chosenCats[3] && chosenCats[1] == chosenCats[2]){
         //correct combo
-        console.log("Correct!");
+        flashMessage("Correct!", 250)
         document.getElementById(chosenBtns[0]).onclick = null;
         document.getElementById(chosenBtns[1]).onclick = null;
         document.getElementById(chosenBtns[2]).onclick = null;
@@ -158,7 +158,7 @@ function clickBox(btnNum) {
         
       } else {
         //wrong combo
-        console.log("Try again");
+        flashMessage("Try again!", 250)
       }
         
   }
