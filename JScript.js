@@ -8,10 +8,13 @@ function emptyConsoleP(){
 }
 
 //show message x for y ms below grid
+
+var TimeOut = '';
+
 function flashMessage(x, y) {
   clearTimeout(timeOut);
   document.getElementById('consoleP').innerHTML = x;
-  var timeOut = setTimeout(emptyConsoleP, y);
+  timeOut = setTimeout(emptyConsoleP, y);
 }
 
 
