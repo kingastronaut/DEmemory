@@ -19,6 +19,7 @@ function flashMessage(x, y) {
 var filename = "catsEasy.csv"
 
 // csv file to JSON
+function setStart(){
 let file = filename;
 fetch (file)
 .then(x => x.text())
@@ -94,7 +95,9 @@ function shuffle(array) {
     matrix16[i] = matrix16[i].concat(matrixCats[i]);
     document.getElementById(matrix16[i][0]).innerHTML = matrix16[i][1]+','+matrix16[i][2]+','+matrix16[i][3];
   }
-});
+})};
+
+setStart();
 
 //recreate matrix16 outside of promise when start is clicked
 var mat16 = [['b1'],['b2'],['b3'],['b4'],['b5'],['b6'],['b7'],['b8'],['b9'],['b10'],['b11'],['b12'],['b13'],['b14'],['b15'],['b16']];
